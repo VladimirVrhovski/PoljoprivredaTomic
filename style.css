@@ -1,0 +1,119 @@
+body {
+    word-wrap: normal;
+}
+.header {
+    z-index: 2;
+    position: fixed;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(26, 159, 130);
+    transition: top 0.3s;
+}
+.navLink {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+.navLink:hover {
+    background-color: rgb(17, 92, 76);
+}
+#nav2 {
+    display: table-cell;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 100vw;
+    box-shadow: 5px 10px 18px rgb(75, 75, 75);
+}
+#nav2 .navLink {
+    color: rgb(26, 159, 130);
+    float: right;
+}
+#nav2 .navLink:hover {
+    border-radius: 4px;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+}
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+#title {
+    font-size: 36px;
+    color: rgb(26, 159, 130);
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+}
+.scmain {
+    z-index: 1;
+    width: 70%;
+    height: 400px;
+    background-color: white;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 5px 10px 18px rgb(26, 159, 130);
+}
+#mainTable {
+    align-items: center;
+    vertical-align: middle;
+}
+#mainTable td {
+    padding: 2vw;
+}
+.part1l, .part1r, .part2l, .part2r {
+    padding: 2%;
+    width: 46%;
+    position: relative;
+    float: left;
+    word-wrap: normal;
+}
+.part1l {
+    vertical-align: top;
+    text-align: left;
+}
+.part2r {
+    text-align: right;
+    float: right;
+}
+h2 {
+    color: rgb(26, 159, 130);
+}
+.more {
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+}
+.more:hover {
+    text-decoration: underline;
+}
+.Img {
+    opacity: 0;
+    -webkit-transform: translateY(10px) rotate(0deg) translateZ(0);
+    transform: translateY(10px) rotate(0deg) translateZ(0);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
